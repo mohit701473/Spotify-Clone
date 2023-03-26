@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+    height: 88px;
+    font-family:'Ubuntu', 'sans-serif';
+    height: 11vh;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+}
+
+.brand{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.brand img{
+    width: 48px;
+    margin-right: 8px;
+}
+
+.nav-item{
+    color: white;
+    list-style: none;
+    margin: 16px;
+}
+
+
+.music-container{
+    height: 74vh;
+}
+
+
+.bottom{
+    background-color: black;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 15vh;
+}
+
+#myProgressBar{
+    width: 80vw;
+    margin-bottom: 16px;
+}
+
+.icons i{
+    margin: 0 3px;
+    cursor: pointer;
+}
