@@ -10,22 +10,25 @@
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li class="brand">
-                <img src="Spotify_App_Logo.svg.png" alt="">Spotify
-            </li>
-            <li class="nav-item search"><input type="search" placeholder="search"></li>
-            <li class="nav-item nav-item-rest">
-                <!-- <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> -->
-                Home
-            </li>
-            <li class="nav-item nav-item-rest">About</li>
+    <div class="top-container">
+        <nav>
+            <ul>
+                <li class="brand">
+                    <img src="Spotify_App_Logo.svg.png" alt="">Spotify
+                </li>
+                <li class="nav-item search"><input type="search" placeholder="search"></li>
+                <li class="nav-item nav-item-rest">
+                    <!-- <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> -->
+                    Home
+                </li>
+                <li class="nav-item nav-item-rest">About</li>
 
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Middle Container -->
+<div class="middle-container">
     <div class="music-container">
         <div class="songList">
             <h2>Best of NCS - No Copyright Sounds</h2>
@@ -94,8 +97,10 @@
         </div>
         <din class="banner"></din>
     </div>
+</div>
 
     <!-- Bottom Conatiner -->
+<div class="lats-container">
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" max="100">
         <div class="icons">
@@ -103,6 +108,11 @@
             <i class="fa-sharp fa-3x fa-regular fa-circle-play"></i>
             <i class="fa-solid fa-3x fa-forward-fast"></i>
         </div>
+        <div class="song-info">
+            <img src="playing.gif" alt="">Let me Love You-Justin Bieber
+        </div>
     </div>
+</div>
+
 </body>
 </html>

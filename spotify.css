@@ -4,14 +4,21 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 
+
 *{
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: peachpuff;
+body, html{
+    background-color: #525462;
 } 
+
+.top-container{
+
+}
+
+/* Navbar Section */
 
 nav{
     background-color: black;
@@ -68,8 +75,10 @@ nav ul{
 }
 
 
-
 /* Middle Container */
+.middle-container{
+
+}
 .music-container{
     height: 70vh;
     font-family: 'Varela Round';
@@ -125,6 +134,9 @@ nav ul{
 
 
  /* Bottom Conatiner */
+ .last-container{
+    
+ }
 .bottom{
     background-color: black;
     height: 118px;
@@ -144,4 +156,17 @@ nav ul{
 .icons i{
     margin: 0 3px;
     cursor: pointer;
+}
+
+
+.song-info{
+    position: absolute;
+    left: 9.5vw ;
+}
+.song-info img{
+    width: 34px;
+    height: 24px;
+    margin-right: 4px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
 }
