@@ -14,9 +14,6 @@ body, html{
     background-color: #525462;
 } 
 
-.top-container{
-
-}
 
 /* Navbar Section */
 
@@ -134,9 +131,7 @@ nav ul{
 
 
  /* Bottom Conatiner */
- .last-container{
-    
- }
+
 .bottom{
     background-color: black;
     height: 118px;
