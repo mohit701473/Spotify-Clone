@@ -146,6 +146,7 @@ nav ul{
 #myProgressBar{
     width: 80vw;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .icons i{
