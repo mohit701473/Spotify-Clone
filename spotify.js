@@ -5,6 +5,7 @@ let gif = document.getElementById("gif")
 let masterPlayIcon = document.getElementById("masterPlay")
 let myProgressBar = document.getElementById("myProgressBar")
 let songItem = document.getElementsByClassName("songitems")
+let songIndex = 0 
 //let songItem = Array.from(document.getElementsByClassName("songitems"))  this is use for forEach loop iteration
 
 
@@ -84,10 +85,48 @@ for(i=0; i<songItemPlay.length ; i++){
     // let songItemPlayIcon = songItemPlay[i]
     songItemPlay[i].addEventListener("click", function(e){
         //console.log(e.target)
+        songIndex = parseInt(e.target.id) + 1
+        //console.log(songIndex)
         makeAllPlays()
         e.target.classList.remove("fa-play-circle")
         e.target.classList.add("fa-pause-circle")
-        //e.target.classList.toggle("fa-pause-circle")
-        console.log(audioElement.src)
+        audioElement.src = "songs/"+songIndex+".mp3"
+        audioElement.currentTime = 0
+        audioElement.play() 
+        masterPlayIcon.classList.remove("fa-circle-play")
+        masterPlayIcon.classList.add("fa-circle-pause")
+        //console.log(audioElement.src) 
+        
+        //console.log(audioElement.src)
     })
 }
+
+
+document.getElementById("next").addEventListener("click", function(){
+    if(songIndex >= 9){
+        songIndex = 0 
+    }
+    else{
+        songIndex += 1
+    }
+    songIndex += 1
+    audioElement.src = "songs/"+songIndex+".mp3"
+    audioElement.currentTime = 0
+    audioElement.play() 
+    masterPlayIcon.classList.remove("fa-circle-play")
+    masterPlayIcon.classList.add("fa-circle-pause")
+})
+
+document.getElementById("previous").addEventListener("click", function(){
+    if(songIndex <= 0){
+        songIndex = 9 
+    }
+    else{
+        songIndex -= 1
+    }
+    audioElement.src = "songs/"+songIndex+".mp3"
+    audioElement.currentTime = 0
+    audioElement.play() 
+    masterPlayIcon.classList.remove("fa-circle-play")
+    masterPlayIcon.classList.add("fa-circle-pause")
+})
